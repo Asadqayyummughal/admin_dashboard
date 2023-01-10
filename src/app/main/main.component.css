@@ -1,0 +1,74 @@
+.main-sub-content{
+    color: black;
+}
+.main-sub-content .top-sec{
+  margin-top: 10px;
+}
+.main-sub-content .middle-sec {
+    margin-top: 10px;
+    display: flex;
+    object-fit:cover;
+    justify-content: space-around;
+}
+.main-sub-content .middle-sec .widget-left{
+    width: 60%;
+    margin-top: 30px;
+
+}
+  .main-sub-content .middle-sec .widget-right{
+    width: 30%;
+    margin-top: 30px;
+  }
+  .main-sub-content .bottom-sec{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-sub-content .bottom-sec .left-widget{
+    width: 60%;
+    margin-top: 30px;
+  }
+  .main-sub-content .bottom-sec .right-widget{
+    width: 30%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+  }
+  .common{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+    transition: 0.3s !important;
+
+  }
+  .main-sub-content .middle-sec .widget-left:hover  {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  @media screen and (max-width:1199px) {
+    .main-sub-content .middle-sec {
+      flex-wrap: wrap;
+
+    }
+    .main-sub-content .bottom-sec{
+      flex-wrap: wrap;
+      
+    }
+    .main-sub-content .middle-sec .widget-left{
+      width: 90%;
+      margin-top: 20px;
+      
+  }
+    .main-sub-content .middle-sec .widget-right{
+      width: 90%;
+      margin-top: 20px;
+    }
+    .main-sub-content .bottom-sec .left-widget{
+       width: 90%;
+      margin-top: 10px;
+    }
+    .main-sub-content .bottom-sec .right-widget{
+      width: 90%;
+      margin-top: 10px;
+    }
+    
+  }

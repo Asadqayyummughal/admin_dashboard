@@ -1,0 +1,35 @@
+<div class="transactions">
+    <div class="trans-title">
+        <h6>Last Few Transactions</h6>
+    </div>
+    <div class="transaction-wraper" *ngFor="let transacton of transactons">
+        
+        <div class="img">
+            <img [src]="transacton.img_src">
+        </div>
+        <div class="title">
+            <p>{{transacton.title}}</p>
+        </div>
+        <div class="price">
+            <p>{{transacton.price}}</p>
+        </div>
+        <div class="shop">
+            <p>{{transacton.shop}}</p>
+        </div>
+        <div class="location">
+            <p>{{transacton.location}}</p>
+        </div>
+        <div class="status"
+         [ngClass]=
+         "
+         {
+            pending:transacton.status=='pending',
+            shiped:transacton.status=='shiped',
+            confirmed:transacton.status=='confirmed'
+         }
+         ">
+            <p>{{transacton.status}}</p>
+        </div>
+        
+    </div>
+</div>

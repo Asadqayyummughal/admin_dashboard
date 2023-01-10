@@ -1,0 +1,116 @@
+.nav-content{
+   
+}
+.nav-content .ham-burger{
+  display: flex;
+  justify-content: center;
+  
+}
+.nav-content .ham-burger .open{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+.nav-content .ham-burger .close{
+    width: 35px;
+    height: 35px;
+    display: none;
+
+}
+.nav-content .ham-burger .open>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+}
+.nav-content .ham-burger .close>i{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-size: 30px;
+}
+.nav-content .nav{
+    list-style: none;
+    color: white;
+    flex-direction: column;
+    padding: 15px 25px;
+    /* height: 916px; */
+
+}
+.nav-content .nav .nav-item{
+    display: block;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+
+}
+.nav-content .nav-item>a{
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.nav-content .nav-item>a>i{
+    font-size:20px;
+    padding: 10px;
+}
+.nav-content .sub-main{
+    flex-basis: 85%;
+    background-color: white;
+}
+.nav-content  .ham-burger{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .nav-content .ham-burger .open{
+      width: 35px;
+      height: 35px;
+      display: none;
+  }
+  .nav-content .ham-burger .close{
+      display: flex;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      display: none;
+  
+  }
+  .main-sec .ham-burger .open>img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .main-sec .ham-burger .close>img{ 
+      width: 100%;
+      height: 100%;
+      object-fit: cover;    
+  }
+ @media screen and (max-width:1370px) {
+    .nav-content .ham-burger .open {
+    position: absolute;
+    z-index: 1;
+    display:block;
+    position: absolute;
+    top: -45px;
+    left: 189px;
+    z-index: 1;
+    display: block;
+    }
+    .nav-content .nav {
+        display: none; 
+        opacity: 0.9;
+    }
+    .nav-content .ham-burger .close{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        }
+} 
+/* @media screen and (min-width:1733px){
+    .nav-content .nav{
+        height: 1733px;
+    }
+    
+} */
